@@ -3,6 +3,38 @@ title: CV | Maxime Boué
 ---
 <div class="wrapper">
   <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <%= partial(:portrait, :locals => { :name => "Maxime Boué", :statut => "Stagiaire au wagon", :photo => "http://res.cloudinary.com/doodlid/image/upload/v1503585219/Save%20images/zwjgbqa6ivsqnujaztr2.png" }) %>
+        <%= partial(:button, :locals => { :mail => "abriko@yahoo.fr" }) %>
+        <%= partial(:mosaique) %>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-6">
+        <h1 class="column-title">Talents</h1>
+        <%= partial(:capsule, :locals => { :title => "Développeur Ruby on rails", :color => "#F15757",:subtitle => "JUNIOR - FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", :icon => "diamond"}) %>
+        <%= partial(:capsule, :locals => { :title => "Développeur Frontend", :color => "#56ABAD",:subtitle => "POST-JUNIOR - FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", :icon => "code"}) %>
+        <%= partial(:capsule, :locals => { :title => "UX/UI Design", :color => "#59B873",:subtitle => "PASSSIONNÉ AUTODIDACTE, simplicité, efficacité", :icon => "lightbulb-o"}) %>
+        <%= partial(:capsule, :locals => { :title => "Graphiste", :color => "#BD6594",:subtitle => "PASSSIONNÉ AUTODIDACTE, style et modernité", :icon => "hand-peace-o"}) %>
 
+        <h1 class="column-title">Mind set</h1>
+        <%= partial(:capsule, :locals => { :title => "Adepte d'écologie", :color => "#59B873",:subtitle => "PASSSIONNÉ ENGAGÉ, économe et responsable", :icon => "leaf"}) %>
+        <%= partial(:capsule, :locals => { :title => "Startup Thinking", :color => "#56ABAD",:subtitle => "LEAN, KOUDETAT, ZERO TO ONE, focus & commitment", :icon => "rocket"}) %>
+        <%= partial(:capsule, :locals => { :title => "Globe-trotter", :color => "#F6BE63",:subtitle => "L'ESPRIT OUVERT DU VOYAGEUR: England, HongKong, China", :icon => "globe"}) %>
+        <%= partial(:capsule, :locals => { :title => "Bricoleur", :color => "#BD6594",:subtitle => "UN ART DE VIVRE, astuce & initiative", :icon => "gears"}) %>
+      </div>
+      <div class="col-xs-12 col-md-12 col-lg-2">
+        <h1 class="column-title">Activités</h1>
+        <%= partial(:event, :locals => {:date => "sept 2017", :poste => "Stage au Wagon Bordeaux, projet Diago" }) %>
+        <%= partial(:event, :locals => {:date => "été 2017", :poste => "Formation au Wagon Bordeaux, développement web" }) %>
+        <%= partial(:event, :locals => {:date => "2016 - 2017", :poste => "Projet web personnel #Parentheze" }) %>
+        <%= partial(:event, :locals => {:date => "2015 - 2017", :poste => "Graphiste indépendant @Artbeing" }) %>
+        <%= partial(:event, :locals => {:date => "2004 - 2014", :poste => "Illustrateur et animateur flash @Gimo ltd" }) %>
+        <%= partial(:event, :locals => {:date => "2001 - 2003", :poste => "Web Designer @Internet France" }) %>
+        <%= partial(:event, :locals => {:date => "2000 - 2001", :poste => "Foramtion au Web Design @Greta" }) %>
+        <%= partial(:event, :locals => {:date => "1999 - 2000", :poste => "Technicien conseil @Wanadoo" }) %>
+        <%= partial(:event, :locals => {:date => "1996 - 1998", :poste => "DUT Génie Civil @IUT Amiens" }) %>
+        <%= partial(:event, :locals => {:date => "1996", :poste => "Bac S @Picardie" }) %>
+      </div>
+    </div>
   </div>
 </div>
