@@ -1,0 +1,40 @@
+$blue-gray: #B9BCC7;
+$medium-gray: #4A4A4A;
+$red: #F15757;
+$green: #59B873;
+$purple: #BD6594;
+$yellow: #F6BE63;
+
+body {
+  background-color: $blue-gray;
+  color: black;
+  font-family: "Open sans", helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  .mail {
+    color: white;
+    font-weight: 600;
+  }
+  .column-title {
+    color: $medium-gray;
+  }
+}
+h2 {
+  font-size: 28px;
+  .subtalent {
+    color: $medium-gray;
+  }
+}
