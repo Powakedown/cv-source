@@ -1,15 +1,23 @@
 <div class="btn btn-large">
   <i class="fa fa-arrow-right rotate-at-click" aria-hidden="true"></i><%= calltoaction %>
 </div>
-<a href="mailto:<%= mail %> "><div class="btn-large btn-hidden">
-  <%= mail %>
-</div></a>
+
+<% link_to 'mailto:<%= mail %>' do %>
+  <div class="btn-large btn-hidden"> <%= mail %> </div>
+<% end %>
+
 <div class="btn-large btn-hidden">
   <%= phone %>
 </div>
-<a href="<%= social1_link %>"><div class="btn-large btn-hidden">
-  <%= social1 %>
-</div></a>
-<a href="<%= social2_link %>"><div class="btn-large btn-hidden">
+
+<% link_to '<%= social1_link %>' do %>
+  <div class="btn-large btn-hidden">
+    <%= social1 %>
+  </div>
+<% end %>
+
+<% link_to '<%= social2_link %>' do %>
+  <div class="btn-large btn-hidden">
   <%= social2 %>
-</div></a>
+  </div>
+<% end %>
