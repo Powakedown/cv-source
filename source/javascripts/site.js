@@ -1,10 +1,13 @@
-// This is where it all goes :)
-
 $(document).ready(function(){
-  $('.btn-large2').hide();
+  $('.btn-hidden').hide();
+  $('.quad').hide();
+
+
+  var degree = 90;
 
   $('.btn-large').on('click', function(){
-      $('.btn-large2').slideDown( "slow", function() {
+      $('.rotate-at-click').toggleClass('rotated');
+      $('.btn-hidden').slideToggle( "slow", "swing", function() {
         // action at the end of animation
     });
   });
