@@ -31,3 +31,9 @@ h1 {
 p {
   font-size: 14px;
 }
+.bring-front {
+  z-index: 1000;
+}
+.fixed {
+  position: fixed;
+}
