@@ -1,7 +1,7 @@
-.wrapper {
-  width: 1100px;
-  height: 100vh;
-}
-.container {
-
-}
+@import "style.css.scss";
+@import "_portrait.css.scss";
+@import "layout.css.scss";
+@import "_button.css.scss";
+@import "_mosaique.css.scss";
+@import "_capsule.css.scss";
+@import "_event.css.scss";
