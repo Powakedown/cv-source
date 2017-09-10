@@ -8,4 +8,3 @@ gem 'font-awesome-middleman'
 gem 'jquery-middleman', '~> 3.1', '>= 3.1.2'
 gem 'puma',      '~> 2.7'
 gem 'rake',      '~> 10.1'
-
