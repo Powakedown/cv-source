@@ -2,43 +2,51 @@
 title: CV | Maxime Boué
 ---
 
-
 <div class="wrapper">
-<%= partial(:button_round, :locals => { :icon => "file-pdf-o", :btn_link => "http://res.cloudinary.com/doodlid/image/upload/v1505051921/CV_maximeboue_kxr2dc.pdf", :color => "#F15757" }) %>
+<%= partial(:button_round, locals: { icon: "file-pdf-o", btn_link: "http://res.cloudinary.com/doodlid/image/upload/v1505051921/CV_maximeboue_kxr2dc.pdf", color: "#F15757" }) %>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <%= partial(:portrait, :locals => { :name => "Maxime Boué", :statut => "Stagiaire au wagon", :photo => "http://res.cloudinary.com/doodlid/image/upload/v1503585219/Save%20images/zwjgbqa6ivsqnujaztr2.png" }) %>
-        <%= partial(:button, :locals => { :calltoaction => "afficher les coordonnées", :mail => "abriko@yahoo.fr", :phone => "06 88 58 88 14", :social1 => "Linkedin", :social1_link => "https://www.linkedin.com/in/abriko/", :social2 => "Behance", :social2_link => "https://www.behance.net/abriko" }) %>
+        <%= partial(:portrait, locals: { name: "Maxime Boué", statut: "Stagiaire au wagon", photo: "http://res.cloudinary.com/doodlid/image/upload/v1520417897/pjocsx3jx3yis6ikr6or.jpg" }) %>
+        <%= partial(:button, locals: { calltoaction: "afficher les coordonnées", mail: "abriko@yahoo.fr", phone: "06 88 58 88 14", social1: "Linkedin", social1_link: "https://www.linkedin.com/in/abriko/", social2: "Behance", social2_link: "https://www.behance.net/abriko" }) %>
         <%= partial(:mosaique) %>
        </div>
       <div class="col-xs-12 col-md-6 col-lg-6">
         <h1 class="column-title">Talents</h1>
-        <%= partial(:capsule, :locals => { :title => "Développeur Ruby on rails", :color => "#F15757", :subtitle => "FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", :icon => "diamond"}) %>
-        <%= partial(:capsule, :locals => { :title => "Développeur Frontend", :color => "#56ABAD",:subtitle => "FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", :icon => "code"}) %>
-        <%= partial(:capsule, :locals => { :title => "Web designer", :color => "#A2CF5E",:subtitle => "Confirmé, expérience et réflexion", :icon => "image"}) %>
-        <%= partial(:capsule, :locals => { :title => "UX Designer", :color => "#59B873",:subtitle => "PASSSIONNÉ AUTODIDACTE, simplicité, efficacité", :icon => "lightbulb-o"}) %>
-        <%= partial(:capsule, :locals => { :title => "Graphiste", :color => "#BD6594",:subtitle => "PASSSIONNÉ AUTODIDACTE, style et modernité", :icon => "hand-peace-o"}) %>
+        <%= partial(:capsule, locals: { title: "Développeur Ruby on rails", color: "#F15757", subtitle: "FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", url: "", icon: "diamond"}) %>
+        <%= partial(:capsule, locals: { title: "Développeur Frontend", color: "#56ABAD", subtitle: "FORMÉ AU WAGON BORDEAUX - ÉTÉ 2017", url: "", icon: "code"}) %>
+        <%= partial(:capsule, locals: { title: "Web designer", color: "#A2CF5E", subtitle: "Confirmé, expérience et réflexion", url: "", icon: "image"}) %>
+        <%= partial(:capsule, locals: { title: "UX Designer", color: "#59B873", subtitle: "PASSSIONNÉ AUTODIDACTE, simplicité, efficacité", url: "", icon: "lightbulb-o"}) %>
+        <%= partial(:capsule, locals: { title: "Graphiste", color: "#BD6594", subtitle: "PASSSIONNÉ AUTODIDACTE, style et modernité", url: "", icon: "hand-peace-o"}) %>
+
+        <h1 class="column-title">Projets Récents</h1>
+        <%= partial(:capsule, locals: { title: "Parentheze (responsive)", color: "#F15757", subtitle: "Ruby on Rails : 100\% BACK & FRONT & DESIGN ", url: "https://staging-parentheze.herokuapp.com", icon: "diamond"}) %>
+        <%= partial(:capsule, locals: { title: "Stage-in (responsive)", color: "#F15757", subtitle: "Ruby on Rails : 40\% BACK & 100\% FRONT & DESIGN ", url: "https://stage-in.herokuapp.com", icon: "diamond"}) %>
+        <%= partial(:capsule, locals: { title: "Capsos (mobile first)", color: "#F15757", subtitle: "Ruby on Rails : 100\% BACK & FRONT & DESIGN ", url: "https://capsos.herokuapp.com", icon: "diamond"}) %>
+        <%= partial(:capsule, locals: { title: "Diag-o (desktop & tablet)", color: "#F15757", subtitle: "Ruby on Rails : 80\% BACK & 100\% FRONT & DESIGN ", url: "https://diago-parentheze.herokuapp.com", icon: "diamond"}) %>
 
         <h1 class="column-title">Mind set</h1>
-        <%= partial(:capsule, :locals => { :title => "Adepte d'écologie", :color => "#59B873",:subtitle => "PASSSIONNÉ ENGAGÉ, économe et responsable", :icon => "leaf"}) %>
-        <%= partial(:capsule, :locals => { :title => "Startup Thinking", :color => "#56ABAD",:subtitle => "LEAN, KOUDETAT, ZERO TO ONE, focus & commitment", :icon => "rocket"}) %>
-        <%= partial(:capsule, :locals => { :title => "Globe-trotter", :color => "#F6BE63",:subtitle => "L'ESPRIT OUVERT DU VOYAGEUR: England, HongKong, China", :icon => "globe"}) %>
-        <%= partial(:capsule, :locals => { :title => "Bricoleur", :color => "#BD6594",:subtitle => "UN ART DE VIVRE, astuce & initiative", :icon => "gears"}) %>
+        <%= partial(:capsule, locals: { title: "Adepte d'écologie", color: "#59B873", subtitle: "PASSSIONNÉ ENGAGÉ, économe et responsable", url: "", icon: "leaf"}) %>
+        <%= partial(:capsule, locals: { title: "Startup Thinking", color: "#56ABAD", subtitle: "LEAN, KOUDETAT, ZERO TO ONE, focus & commitment", url: "", icon: "rocket"}) %>
+        <%= partial(:capsule, locals: { title: "Globe-trotter", color: "#F6BE63", subtitle: "L'ESPRIT OUVERT DU VOYAGEUR: England, HongKong, China", url: "", icon: "globe"}) %>
+        <%= partial(:capsule, locals: { title: "Bricoleur", color: "#BD6594", subtitle: "UN ART DE VIVRE, astuce & initiative", url: "", icon: "gears"}) %>
       </div>
       <div class="col-xs-12 col-md-12 col-lg-2">
         <h1 class="column-title">Activités</h1>
-        <%= partial(:event, :locals => {:date => "sept 2017", :poste => "Stage au Wagon Bordeaux, projet Diago" }) %>
-        <%= partial(:event, :locals => {:date => "été 2017", :poste => "Formation au Wagon Bordeaux, développement web" }) %>
-        <%= partial(:event, :locals => {:date => "2016 - 2017", :poste => "Projet web personnel #Parentheze" }) %>
-        <%= partial(:event, :locals => {:date => "2015 - 2016", :poste => "Graphiste indépendant @Artbeing" }) %>
-        <%= partial(:event, :locals => {:date => "2014", :poste => "UX Designer @Coheris" }) %>
-        <%= partial(:event, :locals => {:date => "2004 - 2014", :poste => "Illustrateur et animateur flash @Gimo ltd" }) %>
-        <%= partial(:event, :locals => {:date => "2001 - 2003", :poste => "Web Designer @Internet France" }) %>
-        <%= partial(:event, :locals => {:date => "2000 - 2001", :poste => "Foramtion au Web Design @Greta" }) %>
-        <%= partial(:event, :locals => {:date => "1999 - 2000", :poste => "Technicien conseil @Wanadoo" }) %>
-        <%= partial(:event, :locals => {:date => "1996 - 1998", :poste => "DUT Génie Civil @IUT Amiens" }) %>
-        <%= partial(:event, :locals => {:date => "1996", :poste => "Bac S @Picardie" }) %>
+        <%= partial(:event, locals: { date: "nov 2017 - now", poste: "Développeur Web & UX Designer & Web Designer, projet Parentheze" }) %>
+        <%= partial(:event, locals: { date: "nov 2017", poste: "Développeur Web & UX Designer, projet Stage-in" }) %>
+        <%= partial(:event, locals: { date: "oct 2017", poste: "Développeur Web & UX Designer, projet Capsos" }) %>
+        <%= partial(:event, locals: { date: "sept 2017", poste: "Stage Développeur Web, projet Diag-o" }) %>
+        <%= partial(:event, locals: { date: "été 2017", poste: "Formation au Wagon Bordeaux, développement web" }) %>
+        <%= partial(:event, locals: { date: "2016 - 2017", poste: "Projet web personnel #Parentheze" }) %>
+        <%= partial(:event, locals: { date: "2015 - 2016", poste: "Graphiste indépendant @Artbeing" }) %>
+        <%= partial(:event, locals: { date: "2014", poste: "UX Designer @Coheris" }) %>
+        <%= partial(:event, locals: { date: "2004 - 2014", poste: "Illustrateur et animateur flash @Gimo ltd" }) %>
+        <%= partial(:event, locals: { date: "2001 - 2003", poste: "Web Designer @Internet France" }) %>
+        <%= partial(:event, locals: { date: "2000 - 2001", poste: "Foramtion au Web Design @Greta" }) %>
+        <%= partial(:event, locals: { date: "1999 - 2000", poste: "Technicien conseil @Wanadoo" }) %>
+        <%= partial(:event, locals: { date: "1996 - 1998", poste: "DUT Génie Civil @IUT Amiens" }) %>
+        <%= partial(:event, locals: { date: "1996", poste: "Bac S @Picardie" }) %>
       </div>
     </div>
   </div>

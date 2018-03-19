@@ -18,6 +18,15 @@
     // color: $medium-gray;
     margin-top: 6px;
   }
+  &.clickable {
+    -webkit-transition: 0.1s ease-in-out;
+        -moz-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+  }
 }
 .capsule-text {
   width: 70%;
@@ -34,4 +43,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.capsule-badge-link {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 79px;
+  bottom: 16px;
+  border-radius: 50%;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  transform: rotate(61deg);
 }
